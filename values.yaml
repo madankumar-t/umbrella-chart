@@ -1,0 +1,26 @@
+javaapi:
+  image:
+    repository: your-docker-repo/javaapi
+    tag: latest
+  service:
+    port: 8080
+  ingress:
+    path: /javaapi
+
+nodeapi:
+  image:
+    repository: your-docker-repo/nodeapi
+    tag: latest
+  service:
+    port: 3000
+  ingress:
+    path: /nodeapi
+
+react-ui:
+  image:
+    repository: your-docker-repo/reactui
+    tag: latest
+  service:
+    port: 3000
+  ingress:
+    path: /react-ui

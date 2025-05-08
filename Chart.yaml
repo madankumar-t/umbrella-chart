@@ -1,0 +1,15 @@
+apiVersion: v2
+name: umbrella-chart
+description: Umbrella Helm chart for Java, Node, and React apps
+type: application
+version: 0.1.0
+dependencies:
+  - name: javaapi
+    version: 0.1.0
+    repository: "file://charts/javaapi"
+  - name: nodeapi
+    version: 0.1.0
+    repository: "file://charts/nodeapi"
+  - name: react-ui
+    version: 0.1.0
+    repository: "file://charts/react-ui"
